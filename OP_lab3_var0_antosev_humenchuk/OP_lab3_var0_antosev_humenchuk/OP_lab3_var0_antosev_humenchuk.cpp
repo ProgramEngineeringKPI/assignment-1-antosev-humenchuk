@@ -64,7 +64,7 @@ int main()
 	Student *budgetStudentsTable = new Student[numberOfBudgetStudents];
 	FillArrayOfBudgetStudents(table, budgetStudentsTable, numberOfStudents);
 	InsertionSort(budgetStudentsTable, 0, numberOfBudgetStudents);
-	SaveData("res.csv", budgetStudentsTable, numberOfBudgetStudents);	
+	SaveData("rating.csv", budgetStudentsTable, numberOfBudgetStudents);	
 	delete[] budgetStudentsTable;
 	delete[] table;
     return 0;
@@ -98,7 +98,6 @@ void FillArrayByDataFromFile(Student *table, int numberOfStudents, FILE *file, i
 			status = Status::Contract;
 			numberOfBudgetStudents--;
 		}
-		else status = Status::Budget;
 		Student student(name, resultScore, status);
 		table[i] = student;
 	}
@@ -120,7 +119,7 @@ void FillArrayOfBudgetStudents(Student *table, Student *budgetStudentsTable, int
 FILE *LoadData(char *filename)
 {
 	FILE *file;
-	fopen_s(&file, filename, "r");
+	file = fopen(filename, "r");
 	if (file == NULL)
 	{
 		printf("Error opening file");
@@ -131,7 +130,7 @@ FILE *LoadData(char *filename)
 void SaveData(char *filename, Student *table, int numOfTeams)
 {
 	FILE *file;
-	fopen_s(&file, filename, "w");
+	file = fopen(filename, "w");
 	if (file == NULL)
 	{
 		printf("Error opening file");
