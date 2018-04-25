@@ -61,13 +61,10 @@ int main()
 	numberOfBudgetStudents = numberOfStudents;
 	Student *table = new Student[numberOfStudents];
 	FillArrayByDataFromFile(table, numberOfStudents, file, numberOfBudgetStudents);
-	PrintArray(table, numberOfStudents);
 	Student *budgetStudentsTable = new Student[numberOfBudgetStudents];
 	FillArrayOfBudgetStudents(table, budgetStudentsTable, numberOfStudents);
 	InsertionSort(budgetStudentsTable, 0, numberOfBudgetStudents);
-	PrintArray(budgetStudentsTable, numberOfBudgetStudents);
-	SaveData("res.csv", budgetStudentsTable, numberOfBudgetStudents);
-	system("pause");
+	SaveData("res.csv", budgetStudentsTable, numberOfBudgetStudents);	
 	delete[] budgetStudentsTable;
 	delete[] table;
     return 0;
@@ -81,7 +78,7 @@ void FillArrayByDataFromFile(Student *table, int numberOfStudents, FILE *file, i
 		string name;
 		int score = 0;
 		double resultScore = 0;
-		char symbol = '+';
+		char symbol;
 		Status status = Status::Budget;
 		fscanf(file, "%c", &symbol);
 		while (symbol != ',')

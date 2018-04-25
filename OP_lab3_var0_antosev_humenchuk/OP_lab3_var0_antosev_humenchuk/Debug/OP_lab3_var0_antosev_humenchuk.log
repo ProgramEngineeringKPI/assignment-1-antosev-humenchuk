@@ -1,5 +1,7 @@
-﻿  OP_lab3_var0_antosev_humenchuk.cpp
-c:\users\sasha\onedrive\документи\visual studio 2015\projects\op_lab3_var0_antosev_humenchuk\op_lab3_var0_antosev_humenchuk\op_lab3_var0_antosev_humenchuk.cpp(142): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\sasha\onedrive\документи\visual studio 2015\projects\op_lab3_var0_antosev_humenchuk\op_lab3_var0_antosev_humenchuk\op_lab3_var0_antosev_humenchuk.cpp(145): warning C4018: '<': signed/unsigned mismatch
-  OP_lab3_var0_antosev_humenchuk.vcxproj -> c:\users\sasha\onedrive\документи\visual studio 2015\Projects\OP_lab3_var0_antosev_humenchuk\Debug\OP_lab3_var0_antosev_humenchuk.exe
-  OP_lab3_var0_antosev_humenchuk.vcxproj -> c:\users\sasha\onedrive\документи\visual studio 2015\Projects\OP_lab3_var0_antosev_humenchuk\Debug\OP_lab3_var0_antosev_humenchuk.pdb (Full PDB)
+﻿  stdafx.cpp
+  OP_lab3_var0_antosev_humenchuk.cpp
+c:\users\sasha\desktop\a\assignment-1-antosev-humenchuk\op_lab3_var0_antosev_humenchuk\op_lab3_var0_antosev_humenchuk\op_lab3_var0_antosev_humenchuk.cpp(139): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\sasha\desktop\a\assignment-1-antosev-humenchuk\op_lab3_var0_antosev_humenchuk\op_lab3_var0_antosev_humenchuk\op_lab3_var0_antosev_humenchuk.cpp(142): warning C4018: '<': signed/unsigned mismatch
+  LINK : C:\Users\sasha\Desktop\a\assignment-1-antosev-humenchuk\OP_lab3_var0_antosev_humenchuk\Debug\OP_lab3_var0_antosev_humenchuk.exe not found or not built by the last incremental link; performing full link
+  OP_lab3_var0_antosev_humenchuk.vcxproj -> C:\Users\sasha\Desktop\a\assignment-1-antosev-humenchuk\OP_lab3_var0_antosev_humenchuk\Debug\OP_lab3_var0_antosev_humenchuk.exe
+  OP_lab3_var0_antosev_humenchuk.vcxproj -> C:\Users\sasha\Desktop\a\assignment-1-antosev-humenchuk\OP_lab3_var0_antosev_humenchuk\Debug\OP_lab3_var0_antosev_humenchuk.pdb (Full PDB)
